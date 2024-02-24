@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Butonların alt alta sıralanması için */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('1.jpeg');
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.soru {
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 10%; /* Sayfanın sol tarafından boşluk */
+    margin-right: 10%; /* Sayfanın sağ tarafından boşluk */
+    color: white;
+}
+
+.secimler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.secimler button {
+    font-size: 20px;
+    padding: 30px 30px;
+    background-color: rgba(245, 222, 179, 0);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Butonun renk değişimini yumuşatmak için */
+    text-align: center;
+    border: 3px solid #ffffff;
+}
+
+.secimler button:hover {
+    background-color: white; /* Butonun hover durumunda arka plan rengi değişimi */
+    border: 3px solid #ffffff;
+    color: #44af2f;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid #ffffff;
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: 15% auto;
+    padding: 20px;
+    width: 4%;
+    color: rgb(255, 255, 255);
+}
+.close:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-container {
+    display: flex;
+    position: fixed; /* Navbar'ı sabit bir konuma sabitlemek için */
+    top: 0px; /* Sayfanın üstünden 100px aşağıda */
+    width: 60%; /* Sayfa genişliğinde */
+    z-index: 1000; /* Navbar'ın diğer öğelerin üzerinde olmasını sağlar */
+    text-align: center;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 100px;
+    margin: 1px;
+    text-align: center;
+}
+.navbar ul li {
+    margin-right: 20px; /* İstediğiniz aralığı ayarlayın */
+    border: 3px solid #ffffff;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0; /* Son elemanın sağındaki boşluğu kaldırır */
+}
+.navbar button {
+    padding: 10px 15px; /* Buton içindeki boşluğu ayarlar */
+    background-color: rgba(245, 222, 179, 0); /* Butonun arka plan rengini ayarlar */
+    border: none; /* Butonun kenarlığını kaldırır */
+    border-radius: 5px; /* Butonun köşelerini yuvarlar */
+    color: rgb(255, 255, 255); /* Buton metin rengini ayarlar */
+    cursor: pointer; /* Buton üzerine gelince imleci değiştirir */
+    transition: background-color 0.3s ease; /* Butonun arka plan rengi değişimini yumuşatır */
+    text-decoration: none; /* Buton alt çizgisini kaldırır */
+}
+.navbar button:hover {
+    background-color: #af4b2f; /* Butonun üzerine gelindiğinde arka plan rengini değiştirir */
+}
+/* Diğer öğeleri de benzer şekilde özelleştirebilirsiniz */
+
+
+
+
+
+
+
